@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Gallery Heist</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0f1c'/%3E%3Cpath d='M16 4 L24 16 L16 28 L8 16 Z' fill='%23ffd94a'/%3E%3C/svg%3E">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05070f;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    width: min(100vw, calc(100vh * 1.5));
+    height: auto;
+    max-height: 100vh;
+    image-rendering: auto;
+    background: #0b0f1c;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="640"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
